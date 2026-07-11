@@ -17,8 +17,37 @@
             6 file(s)
         </p>
         <hr />
-        <h2>Under Construction</h2>
-        <p>AUTOEXEC.BAT was a batch file that ran when DOS started up.  A batch file is basically just a DOS script.  Here, I'll add some content aobut the AUTOEXEC.BAT file I configured and used on my own DOS systems.  I'll also add some other batch files that are useful for DOS.</p>
+        <h2>What is AUTOEXEC.BAT?</h2>
+        <p>AUTOEXEC.BAT was a batch file that ran when DOS started up.  A batch file is basically just a DOS script.  Here, I'll add some content about the AUTOEXEC.BAT file I configured and used on my own DOS systems.  I'll also add some other batch files that are useful for DOS.  But just to get things started...</p>
+        <h2>Examples</h2>
+        <p>Below is an example of a line you might see to set the PATH.  In this case, both for DOS and an accompanying Windows installation.</p>
+<textarea rows="2" cols="40">
+PATH C:\DOS;C:\WINDOWS
+</textarea>
+        <p>In some cases, I'd want to pause the screen, so I could view the details of bootup, and then clear the screen for a fresh view when I was ready to go to the prompt.</p>
+<textarea rows="4" cols="40">
+PATH C:\DOS;C:\WINDOWS
+PAUSE
+CLS
+</textarea>
+        <p>If there was additional system information you wanted to view at boot, you could add some commands to view DOS version and memory usage.</p>
+<textarea rows="6" cols="40">
+PATH C:\DOS;C:\WINDOWS
+MEM
+VER
+PAUSE
+CLS
+</textarea>
+        <p>And just to make things more personable, I use to often output some nice text to the screen.</p>
+<textarea rows="8" cols="40">
+PATH C:\DOS;C:\WINDOWS
+MEM
+VER
+ECHO Boot is complete.  DOS prompt is ready.
+PAUSE
+CLS
+ECHO Welcome! Ready to receive a command.
+</textarea>
         <!-- Footer Below -->
         <hr />
         <p>Copyright ClassicAdam, 2026</p>
